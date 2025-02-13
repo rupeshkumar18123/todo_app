@@ -1,14 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./style.css"
-function TodoCard({todo}) {
+function TodoCard({todo,onDelete}) {
+  const [msg_done,setMsg_done] = useState("");
+  const [isDone,setIsDone]=useState(false);
+  const todo_done=()=>{
+       setMsg_done("work finished..!!");
+       setIsDone(true);
+  }
   return (
-    <div className=' shadow-xl card'>
+    <div className={`shadow-xl card ${isDone ? 'completed' : ''}`}>
         <strong> Task no : {todo.ID}</strong>
         <br />
         <span>Task : {todo.task}</span>
         <br />
-        <button >done</button>
-        <button>clear</button>
+        <button onClick={todo_done}  disabled={isDone}>done</button>
+        <button onClick={()=>{onDelete(todo.ID)}}>clear</button>
+        <p>{msg_done}</p>
     </div>
   )
 }

@@ -21,6 +21,11 @@ function Insert_todo() {
             }
           }
   }
+
+const delete_todos=(todoId)=>{
+     setTodos(todos.filter(todo=>todo.ID !== todoId));
+}
+
   return (
     
     <div >
@@ -40,7 +45,7 @@ function Insert_todo() {
               
               todos.map((todo)=>(
                 
-                <TodoCard key={todo.id} todo={todo}/>
+                <TodoCard key={todo.id} todo={todo} onDelete={delete_todos}/>
               ))
             }
             

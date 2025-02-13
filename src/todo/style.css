@@ -66,3 +66,8 @@ input:hover {
   border-color: rgba(0, 0, 0, 0.5); /* Highlight on hover */
   background-color: rgba(0, 0, 0, 0.1); /* Slight background change */
 }
+
+
+.completed{
+  background-color: chartreuse;
+}
