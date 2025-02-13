@@ -3,7 +3,7 @@ import "./style.css"
 function TodoCard({todo}) {
   return (
     <div className=' shadow-xl card'>
-        <strong> Task no : {todo.id}</strong>
+        <strong> Task no : {todo.ID}</strong>
         <br />
         <span>Task : {todo.task}</span>
         <br />

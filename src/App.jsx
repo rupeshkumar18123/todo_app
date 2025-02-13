@@ -8,7 +8,7 @@ function App() {
   return (
     <>
      <Insert_todo/>
-     <TodoList/>
+     {/* <TodoList/> */}
     </>
   )
 }
