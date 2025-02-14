@@ -8,7 +8,8 @@ function TodoCard({todo,onDelete}) {
        setIsDone(true);
   }
   return (
-    <div className={`shadow-xl card ${isDone ? 'completed' : ''}`}>
+    <div className={`shadow-xl card ${isDone ? 'completed' : ''}`}>    
+    {/* ${isDone ? 'completed' : ''}     ----> not able to add */}
         <strong> Task no : {todo.ID}</strong>
         <br />
         <span>Task : {todo.task}</span>
