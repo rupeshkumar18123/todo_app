@@ -29,7 +29,7 @@ A concise and efficient To-Do application to manage your daily tasks seamlessly.
 
 ![App Screenshot](https://via.placeholder.com/800x400.png?text=App+Screenshot)
 
-Check out the live demo: [To-Do App Demo](https://your-demo-link.com)
+Check out the live demo: [To-Do App Demo](https://todo-app-pearl-omega-28.vercel.app/)
 
 ## Installation
 
