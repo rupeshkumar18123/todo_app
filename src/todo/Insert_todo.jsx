@@ -26,6 +26,13 @@ const delete_todos=(todoId)=>{
      setTodos(todos.filter(todo=>todo.ID !== todoId));
 }
 
+const todo_update = (todoid_update)=>{
+  const update_task = prompt("Enter new task : ");
+  if(update_task){
+    setTodos(todos.map(todo=>todo.ID == todoid_update ? {...todo,task:update_task} :todo));
+  }
+}
+
   return (
     
     <div >
@@ -45,7 +52,7 @@ const delete_todos=(todoId)=>{
               
               todos.map((todo)=>(
                 
-                <TodoCard key={todo.ID} todo={todo} onDelete={delete_todos}/>
+                <TodoCard key={todo.ID} todo={todo} onDelete={delete_todos} todo_update={todo_update}/>
               ))
             }
             
